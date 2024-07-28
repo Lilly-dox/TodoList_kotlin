@@ -18,7 +18,7 @@ class TodoDetailsActivity : AppCompatActivity() {
         val description = intent.getStringExtra("TODO_DESCRIPTION")
         val position = intent.getIntExtra("TODO_POSITION", -1)
 
-        binding.todoTitleEditText.text = title
+        binding.todoTitleEditText.setText(title)
         binding.todoDescriptionEditText.setText(description)
 
         binding.saveButton.setOnClickListener {
